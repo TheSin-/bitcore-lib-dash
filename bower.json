@@ -1,17 +1,17 @@
 {
-  "name": "bitcore-lib-dash",
-  "main": "./bitcore-lib-dash.min.js",
+  "name": "bitcore-lib-terracoin",
+  "main": "./bitcore-lib-terracoin.min.js",
   "version": "0.15.2",
-  "homepage": "https://github.com/dashevo/bitcore-lib-dash",
+  "homepage": "https://github.com/TheSin-/bitcore-lib-terracoin",
   "authors": [
-    "Dash", "BitPay, Inc."
+    "Terracoin", "BitPay, Inc."
   ],
-  "description": "A pure, powerful core for your dash project.",
+  "description": "A pure, powerful core for your terracoin project.",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "dash",
+    "terracoin",
     "bitcoin",
     "bitcore",
     "btc",
