@@ -2013,6 +2013,7 @@ Hash.sha512hmac = function(data, key) {
 
 var BN = require('./bn');
 var BufferUtil = require('../util/buffer');
+
 var EC = require('elliptic').ec;
 var ec = new EC('secp256k1');
 var ecPoint = ec.curve.point.bind(ec.curve);
@@ -2132,6 +2133,7 @@ Point.prototype.validate = function validate() {
   if (p2.y.cmp(this.y) !== 0) {
     throw new Error('Invalid y value for curve.');
   }
+
 
   //todo: needs test case
   if (!(this.mul(Point.getN()).isInfinity())) {
@@ -3256,7 +3258,7 @@ module.exports = [{
 }, {
   name: 'MerkleBlock',
   message: 'Internal Error on MerkleBlock {0}',
-   errors: [{
+  errors: [{
     'name': 'InvalidMerkleTree',
     'message': 'This MerkleBlock contain an invalid Merkle Tree'
   }]
@@ -5094,8 +5096,8 @@ addNetwork({
   pubkeyhash: 0x00,
   privatekey: 0x80,
   scripthash: 0x05,
-  xpubkey: 0x488b21e,    // 'xpub' (Bitcoin Default)
-  xprivkey: 0x488ade4,   // 'xprv' (Bitcoin Default)
+  xpubkey: 0x0488b21e,
+  xprivkey: 0x0488ade4,
   networkMagic: 0x42babe56,
   port: 13333,
   dnsSeeds: [
@@ -5116,8 +5118,8 @@ addNetwork({
   pubkeyhash: 0x6f,
   privatekey: 0xef,
   scripthash: 0xc4,
-  xpubkey: 0x43587cf,     // 'tpub' (Bitcoin Default)
-  xprivkey: 0x04358394    // 'tprv' (Bitcoin Default)
+  xpubkey: 0x043587cf,
+  xprivkey: 0x04358394
 });
 
 /**
