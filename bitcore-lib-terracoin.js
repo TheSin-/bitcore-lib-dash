@@ -54640,12 +54640,12 @@ module.exports={
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheSin-/bitcore-lib-terracoin.git"
+    "url": "https://github.com/terracoin/bitcore-lib-terracoin.git"
   },
   "bugs": {
-    "url": "https://github.com/TheSin-/bitcore-lib-terracoin/issues"
+    "url": "https://github.com/terracoin/bitcore-lib-terracoin/issues"
   },
-  "homepage": "https://github.com/TheSin-/bitcore-lib-terracoin",
+  "homepage": "https://github.com/terracoin/bitcore-lib-terracoin",
   "browser": {
     "request": "browser-request"
   },
@@ -54658,7 +54658,7 @@ module.exports={
     "lodash": "=4.17.4"
   },
   "devDependencies": {
-    "bitcore-build-terracoin": "TheSin-/bitcore-build-terracoin",
+    "bitcore-build-terracoin": "terracoin/bitcore-build-terracoin",
     "browserify": "latest",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
