@@ -73,7 +73,7 @@ describe('URI', function() {
     uri.should.be.instanceof(URI);
   });
 
-  describe('instantiation from bitcoin uri', function() {
+  describe('instantiation from terracoin uri', function() {
     /* jshint maxstatements: 25 */
     var uri;
 
@@ -238,7 +238,7 @@ describe('URI', function() {
   });
 
   it('displays nicely on the console (#inspect)', function() {
-    var uri = 'bitcoin:1DP69gMMvSuYhbnxsi4EJEFufUAbDrEQfj';
+    var uri = 'terracoin:1DP69gMMvSuYhbnxsi4EJEFufUAbDrEQfj';
     var instance = new URI(uri);
     instance.inspect().should.equal('<URI: ' + uri + '>');
   });
