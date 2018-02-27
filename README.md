@@ -63,7 +63,7 @@ gulp browser
 
 This will generate files named `bitcore-lib-terracoin.js` and `bitcore-lib-terracoin.min.js`.
 
-You can also use our pre-generated files, provided for each release along with a PGP signature by one of the project's maintainers. To get them, checkout a release commit (for example, https://github.com/terracoin/bitcore-lib-terracoin/commit/e33b6e3ba6a1e5830a079e02d949fce69ea33546 for v0.12.6).
+You can also use our pre-generated files, provided for each release along with a PGP signature by one of the project's maintainers. To get them, checkout a release commit (for example, https://github.com/terracoin/bitcore-lib-terracoin/commit/2204f36e626ef7bebc075fcb9d6fa4c51d7b82ca for v0.15.2).
 
 To verify signatures, use the following PGP keys:
 - @braydonf: https://pgp.mit.edu/pks/lookup?op=get&search=0x9BBF07CAC07A276D `D909 EFE6 70B5 F6CC 89A3 607A 9BBF 07CA C07A 276D`
