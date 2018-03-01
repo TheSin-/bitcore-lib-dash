@@ -10371,7 +10371,7 @@ Transaction.prototype.fromObject = function fromObject(arg) {
   var self = this;
   var transaction;
   if (arg instanceof Transaction) {
-    transaction = transaction.toObject();
+    transaction = arg.toObject();
   } else {
     transaction = arg;
   }
