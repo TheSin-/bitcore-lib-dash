@@ -1,7 +1,7 @@
 {
   "name": "bitcore-lib-terracoin",
   "main": "./bitcore-lib-terracoin.min.js",
-  "version": "0.15.2",
+  "version": "0.15.3",
   "homepage": "https://github.com/terracoin/bitcore-lib-terracoin",
   "authors": [
     "Terracoin", "BitPay, Inc."
