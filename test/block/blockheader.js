@@ -244,18 +244,25 @@ describe('BlockHeader', function() {
       var x = BlockHeader.fromRawBlock(dataRawBlockBuffer);
       var valid = x.validProofOfWork(x);
       valid.should.equal(true);
-
     });
 
-//    it('should validate proof of work as false because incorrect proof of work', function() {
-//      var x = BlockHeader.fromRawBlock(dataRawBlockBuffer);
-//      var parentMerkleRoot = x.auxPow.parentBlockHeader.merkleRoot;
-//      x.auxPow.parentBlockHeader.merkleRoot =
-//        Buffer.from("1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef","hex");
-//      var valid = x.validProofOfWork(x);
-//      valid.should.equal(false);
-//      x.auxPow.parentBlockHeader.merkleRoot = parentMerkleRoot;
-//    });
+    it('should validate proof of work as false because incorrect proof of work', function() {
+      var x = BlockHeader.fromRawBlock(dataRawBlockBuffer);
+      if (!x.versionObject.isLegacy()) {
+        var parentMerkleRoot = x.auxPow.parentBlockHeader.merkleRoot;
+        x.auxPow.parentBlockHeader.merkleRoot =
+          Buffer.from("1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef","hex");
+        var valid = x.validProofOfWork(x);
+        valid.should.equal(false);
+        x.auxPow.parentBlockHeader.merkleRoot = parentMerkleRoot;
+      } else {
+        var nonce = x.nonce;
+        x.nonce = 0;
+        var valid = x.validProofOfWork(x);
+        valid.should.equal(false);
+        x.nonce = nonce;
+      }
+    });
 
   });
 
