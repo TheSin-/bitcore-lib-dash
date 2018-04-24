@@ -54501,7 +54501,7 @@ exports.createContext = Script.createContext = function (context) {
 },{"indexof":159}],224:[function(require,module,exports){
 module.exports={
   "name": "bitcore-lib-terracoin",
-  "version": "0.15.4",
+  "version": "0.15.5",
   "description": "A pure and powerful JavaScript Terracoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
